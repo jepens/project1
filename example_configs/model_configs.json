@@ -1,0 +1,91 @@
+{
+    "RandomForest_20250205_123456_a1b2c3d": {
+        "model_info": {
+            "name": "Random Forest",
+            "version": "20250205_123456",
+            "hash": "a1b2c3d",
+            "metrics": {
+                "accuracy": 0.856,
+                "f1_score": 0.843
+            }
+        },
+        "preprocessing": {
+            "method": "TfidfVectorizer",
+            "options": {
+                "max_features": 5000,
+                "ngram_range": [1, 2]
+            }
+        },
+        "hyperparameters": {
+            "n_estimators": 500,
+            "max_depth": 50,
+            "min_samples_split": 5,
+            "min_samples_leaf": 2
+        },
+        "training_info": {
+            "timestamp": "2025-02-05 12:34:56",
+            "duration": "00:15:23",
+            "dataset_hash": "xyz789"
+        }
+    },
+    
+    "LSTM_20250205_123456_e5f6g7h": {
+        "model_info": {
+            "name": "LSTM",
+            "version": "20250205_123456",
+            "hash": "e5f6g7h",
+            "metrics": {
+                "accuracy": 0.878,
+                "f1_score": 0.865
+            }
+        },
+        "preprocessing": {
+            "method": "Word2Vec",
+            "options": {
+                "max_length": 128,
+                "embedding_dim": 100
+            }
+        },
+        "hyperparameters": {
+            "lstm_units": 128,
+            "num_layers": 2,
+            "dropout": 0.3,
+            "learning_rate": 0.0001
+        },
+        "training_info": {
+            "timestamp": "2025-02-05 12:34:56",
+            "duration": "01:23:45",
+            "dataset_hash": "xyz789"
+        }
+    },
+    
+    "DistilBERT_20250205_123456_i9j0k1l": {
+        "model_info": {
+            "name": "DistilBERT",
+            "version": "20250205_123456",
+            "hash": "i9j0k1l",
+            "metrics": {
+                "accuracy": 0.892,
+                "f1_score": 0.885
+            }
+        },
+        "preprocessing": {
+            "method": "DistilBERT_tokenizer",
+            "options": {
+                "max_length": 128,
+                "truncation": true
+            }
+        },
+        "hyperparameters": {
+            "learning_rate": 2e-5,
+            "batch_size": 16,
+            "warmup_steps": 500,
+            "weight_decay": 0.0001
+        },
+        "training_info": {
+            "timestamp": "2025-02-05 12:34:56",
+            "duration": "02:34:56",
+            "dataset_hash": "xyz789"
+        }
+    }
+}

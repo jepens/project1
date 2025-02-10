@@ -1,0 +1,25 @@
+{
+    "vector_storage": {
+        "supported_formats": ["npz", "npy"],
+        "validation_rules": {
+            "require_metadata": true,
+            "require_preprocessing": true,
+            "require_vectors": true
+        }
+    },
+    "vectorization": {
+        "tfidf": {
+            "max_features": 1000,
+            "min_df": 5
+        },
+        "word2vec": {
+            "vector_size": 100,
+            "window": 5,
+            "min_count": 1
+        },
+        "bert": {
+            "max_length": 512,
+            "model_name": "indolem/indobert-base-uncased"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Experiment files
+experiments/metadata/*
+experiments/models/*
+
+# Data files
+data/processed/*
+data/vectorized/*
+models/*
+
+# Log files
+*.log
+
+# Cache
+.streamlit/
